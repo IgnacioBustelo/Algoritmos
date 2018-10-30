@@ -2,10 +2,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+    System.out.println(verificarBalance.estaBalanceada("()"));
+    System.out.println(verificarBalance.estaBalanceada("2+((3+4*[23-2{2}]+4))"));
+        System.out.println(verificarBalance.estaBalanceada("((())){{{}}}[[[[]]]]"));
+        System.out.println(verificarBalance.estaBalanceada("(){}(){}(}{)}({)}({)}({)}({)("));
 
-    System.out.println(esCapicua.seraCapicua("neuquen"));
-    System.out.println(esCapicua.seraCapicua("mierda"));
-    System.out.println(esCapicua.seraCapicua("sever ala reves"));
 
 
 
