@@ -9,16 +9,17 @@ public class VerificarAnagramaConLista {
             palabraAComparar.add(otraPalabra.charAt(i));
 
         }
-
+            int verificador;
         for (int i = 0; i <palabra.length() ; i++) {
-
-            for (int j = 0; j < palabraAComparar.size() ; j++) {
+            verificador= palabraAComparar.size();
+            for (int j = 0; j < verificador ; j++) {
                 if (palabra.charAt(i)==palabraAComparar.get(j)){
                     palabraAComparar.remove(j);
+                    break;
                 }
 
             }
-
+            if (palabraAComparar.size()==verificador) return false;
         }
         return palabraAComparar.isEmpty();
     }
