@@ -5,8 +5,10 @@ public class DecimalABinario {
     public static Double convertirABinario(Double decimal,int decimales){
         List<Integer> resultadoEnteroLista = new ArrayList<Integer>();
         List<Integer>resultadoListaDecimal= new ArrayList<Integer>();
+
+
         int parteEntera = decimal.intValue();
-        Float parteDecimal=decimal.floatValue()-parteEntera;
+        Double parteDecimal=decimal-parteEntera;
         while (parteEntera>0 ){
             resultadoEnteroLista.add(parteEntera%2);
             parteEntera = parteEntera/2;
